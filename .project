@@ -3,6 +3,7 @@
 	<name>PQ9Bus</name>
 	<comment></comment>
 	<projects>
+		<project>CodeCoverage</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
