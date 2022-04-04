@@ -25,7 +25,6 @@ PQ9Bus * PQ9Bus_instances[4];		// pointer to the instantiated	PQ9Bus classes
 #define IRQHANDLER(M) \
     { \
     uint32_t status = MAP_UART_getEnabledInterruptStatus( EUSCI_A## M ##_BASE ); \
-            MAP_UART_clearInterruptFlag( EUSCI_A## M ##_BASE, status ); \
          \
         /* Receive interrupt flag */ \
         if (status & UCRXIFG) \
